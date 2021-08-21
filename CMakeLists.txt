@@ -22,12 +22,14 @@ set(
     base/logging.cc
     base/logging.h
     base/macros.h
+    base/notreached.h
     base/memory/scoped_policy.h
     base/numerics/safe_conversions.h
     base/numerics/safe_conversions_impl.h
     base/numerics/safe_math.h
     base/rand_util.cc
     base/rand_util.h
+    base/scoped_clear_last_error.h
     base/scoped_generic.h
     base/strings/string_number_conversions.cc
     base/strings/string_number_conversions.h
@@ -57,6 +59,7 @@ if(WIN32)
   list(
       APPEND
       sources
+      base/scoped_clear_last_error_win.cc
       base/strings/string_util_win.cc
       base/strings/string_util_win.h
       base/synchronization/lock_impl_win.cc
