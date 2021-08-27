@@ -53,6 +53,7 @@ set(
     base/threading/thread_local_storage.cc
     base/threading/thread_local_storage.h
     build/build_config.h
+    build/buildflag.h
 )
 
 if(WIN32)
@@ -187,6 +188,7 @@ install(
 
 install(
     FILES "build/build_config.h"
+    FILES "build/buildflag.h"
     DESTINATION "${include_install_dir}/build"
 )
 
