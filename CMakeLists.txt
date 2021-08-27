@@ -53,6 +53,7 @@ set(
     base/threading/thread_local_storage.cc
     base/threading/thread_local_storage.h
     build/build_config.h
+    build/buildflag.h
 )
 
 if(WIN32)
