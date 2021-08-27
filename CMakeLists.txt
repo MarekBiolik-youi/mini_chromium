@@ -53,6 +53,8 @@ set(
     base/threading/thread_local_storage.cc
     base/threading/thread_local_storage.h
     build/build_config.h
+    build/buildflag.h
+    build/chromeos_buildflags.h
 )
 
 if(WIN32)
@@ -187,6 +189,8 @@ install(
 
 install(
     FILES "build/build_config.h"
+    FILES "build/buildflag.h"
+    FILES "build/chromeos_buildflags.h"
     DESTINATION "${include_install_dir}/build"
 )
 
