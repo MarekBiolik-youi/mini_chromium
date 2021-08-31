@@ -23,6 +23,7 @@ set(
     base/logging.h
     base/macros.h
     base/notreached.h
+    base/memory/page_size.h
     base/memory/scoped_policy.h
     base/numerics/safe_conversions.h
     base/numerics/safe_conversions_impl.h
@@ -61,6 +62,9 @@ if(WIN32)
   list(
       APPEND
       sources
+      base/memory/page_size_win.cc
+      base/process/memory.cc
+      base/process/memory.h
       base/scoped_clear_last_error_win.cc
       base/strings/string_util_win.cc
       base/strings/string_util_win.h
