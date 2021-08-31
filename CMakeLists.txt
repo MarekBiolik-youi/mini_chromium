@@ -61,6 +61,8 @@ if(WIN32)
   list(
       APPEND
       sources
+      base/process/memory.cc
+      base/process/memory.h
       base/scoped_clear_last_error_win.cc
       base/strings/string_util_win.cc
       base/strings/string_util_win.h
